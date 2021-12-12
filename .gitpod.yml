@@ -1,0 +1,11 @@
+tasks:
+  - name: Spin up Dev env
+    init: |
+      yarn install
+    command: |
+      yarn start
+
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint
+    - esbenp.prettier-vscode
