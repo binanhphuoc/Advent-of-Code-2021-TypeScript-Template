@@ -16,7 +16,7 @@ const findAdjLocations = (input: number[][], [r, c]: number[]): number[][] => {
 
 export default (octs: number[][]) => {
   let flashes = 0;
-  for (const _ of lodash.range(100)) {
+  for (const {} of lodash.range(100)) {
     const queue: number[][] = [];
     for (const [[r, c]] of entries(octs)) {
       octs[r][c] += 1;

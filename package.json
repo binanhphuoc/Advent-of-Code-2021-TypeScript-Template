@@ -6,7 +6,8 @@
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
-    "start": "nodemon --ignore 'src/puzzles/*' --exec ts-node src/index.ts"
+    "start": "nodemon --ignore 'src/puzzles/*' --exec ts-node src/index.ts",
+    "debug": "tsc -p tsconfig.json --sourcemap"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.5.0",

@@ -17,8 +17,8 @@ const loop = async (): Promise<void> => {
       const folderName = areBothPartsInSameFolder ? day : puzzle;
       return Promise.all([
         fs.readFileSync(`${process.cwd()}/src/puzzles/${folderName}/input.txt`, "utf8"),
-        import(`${process.cwd()}/src/puzzles/${folderName}/parser`),
-        import(`${process.cwd()}/src/puzzles/${folderName}/${areBothPartsInSameFolder ? part : "solver"}`)
+        import(`${__dirname}/puzzles/${folderName}/parser`),
+        import(`${__dirname}/puzzles/${folderName}/${areBothPartsInSameFolder ? part : "solver"}`)
       ]);
     })
     .then(([rawInputTxt, { default: parse }, { default: solve }]) => {

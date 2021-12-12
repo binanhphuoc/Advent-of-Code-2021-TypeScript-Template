@@ -2,8 +2,8 @@
   "compilerOptions": {
     "target": "ES6",
     "module": "CommonJS",
-    "sourceMap": true,
     "rootDir": "./src",
+    "outDir": "./build",
     "esModuleInterop": true,
     "strict": true,
     "typeRoots": ["./node_modules/@types"]
