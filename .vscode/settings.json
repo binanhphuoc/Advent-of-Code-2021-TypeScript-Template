@@ -18,6 +18,13 @@
       "**/.git/objects/**": true,
       "**/.git/subtree-cache/**": true,
       "**/.hg/store/**": true
-    } // respect .eslintignore in the server
+    }, // respect .eslintignore in the server
+    "auto-run-command.rules": [
+      {
+        "condition": "always",
+        "command": "workbench.action.debug.start",
+        "message": "Start debugging session"
+      }
+    ]
   }
   

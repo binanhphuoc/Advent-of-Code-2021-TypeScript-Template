@@ -3,8 +3,6 @@ tasks:
     init: |
       yarn install
       npm install nodemon -g
-    command: |
-      yarn start
 
 vscode:
   extensions:
