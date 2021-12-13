@@ -9,3 +9,4 @@ vscode:
   extensions:
     - dbaeumer.vscode-eslint
     - esbenp.prettier-vscode
+    - synedra.auto-run-command
