@@ -7,7 +7,7 @@
     {
       "label": "build:watch",
       "type": "shell",
-      "command": ["yarn build:watch", "echo 'export PATH=$PATH:${workspaceFolder}/node_modules/nodemon/bin' >> ~/.bashrc"],
+      "command": ["yarn build:watch"],
       "isBackground": true,
       "problemMatcher":"$tsc-watch"
     }

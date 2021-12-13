@@ -2,6 +2,7 @@ tasks:
   - name: Spin up Dev env
     init: |
       yarn install
+      npm install nodemon -g
     command: |
       yarn start
 

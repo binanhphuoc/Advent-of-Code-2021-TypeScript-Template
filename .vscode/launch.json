@@ -16,7 +16,7 @@
         "${workspaceFolder}/build/**/*.js"
       ],
       "restart": true,
-      "runtimeExecutable": "${workspaceFolder}/node_modules/nodemon/bin",
+      "runtimeExecutable": "nodemon",
       "runtimeArgs": ["--ignore", "./build/puzzles", "--ignore", "./src"]
     }
   ]
