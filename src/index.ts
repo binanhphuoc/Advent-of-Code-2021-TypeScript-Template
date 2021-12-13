@@ -32,7 +32,7 @@ const loop = async (): Promise<void> => {
       // and want the import() statement to use this
       // edited version instead of what in the cache
       Object.keys(require.cache).forEach((filePath) => {
-        if (filePath.indexOf(`${process.cwd()}/src/puzzles`) !== -1) {
+        if (filePath.indexOf(`${__dirname}/puzzles`) !== -1) {
           delete require.cache[filePath];
         }
       });

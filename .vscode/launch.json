@@ -10,7 +10,7 @@
       "name": "Debug",
       "program": "${workspaceFolder}/src/index.ts",
       "sourceMaps": true,
-      "preLaunchTask": "npm: debug",
+      "preLaunchTask": "build:watch",
       "console": "integratedTerminal",
       "outFiles": [
         "${workspaceFolder}/build/**/*.js"
