@@ -5,16 +5,19 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "node",
+      "type": "pwa-node",
       "request": "launch",
       "name": "Debug",
-      "program": "${workspaceFolder}/src/index.ts",
+      "program": "${workspaceFolder}/build/index.js",
       "sourceMaps": true,
       "preLaunchTask": "build:watch",
       "console": "integratedTerminal",
       "outFiles": [
         "${workspaceFolder}/build/**/*.js"
-      ]
+      ],
+      "restart": true,
+      "runtimeExecutable": "nodemon",
+      "runtimeArgs": ["--ignore", "./build/puzzles", "--ignore", "./src"]
     }
   ]
 }
